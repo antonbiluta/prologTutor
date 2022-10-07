@@ -16,3 +16,6 @@ listNumb1(I, [H|T], E, IE):-
     IE1 is IE+1, listNumb1(I, [H|T], E, IE1).
 
 listNumb1(_, [], _, _):-!.
+
+listNumb2(I, [H|T], E):-N1 is N-1, listNumb2(I,T,E).
+listNumb2(0, [E|T], E):-!.
