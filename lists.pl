@@ -10,6 +10,7 @@ listNumb(I, [H|T], E):-(
                     listNumb1(I, [H|T], E, 0)
                     ).
 
+listNumb1(_, [], _, _):-!.
 listNumb1(I, [H|T], E, IE):-
     H is E ->
     I is IE;
